@@ -29,4 +29,6 @@ public class CurrencyManipulatorFactory {
 
         return map.values();//create a collection of the map
     }
-}
+
+
+    }
