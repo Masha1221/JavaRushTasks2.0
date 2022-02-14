@@ -3,12 +3,15 @@ package com.javarush.task.task40.task4001;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 /* 
 POST, а не GET
 */
+
+
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -18,9 +21,12 @@ public class Solution {
 
     public void sendPost(URL url, String urlParameters) throws Exception {
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-        connection.setRequestMethod("GET");
+                connection.setDoOutput(true);
+        connection.setRequestMethod("POST");
         connection.setRequestProperty("User-Agent", "Mozilla/5.0");
+       OutputStream outputStream = connection.getOutputStream();
+           outputStream.write(urlParameters.getBytes());
+            outputStream.flush();
 
         int responseCode = connection.getResponseCode();
         System.out.println("Response Code: " + responseCode);
