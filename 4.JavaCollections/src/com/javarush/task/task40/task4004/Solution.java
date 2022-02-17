@@ -30,7 +30,18 @@ public class Solution {
     }
 
     public static boolean isPointInPolygon(Point point, List<Point> polygon) {
-        //напишите тут ваш код
+        int i;
+        int j;
+        boolean result = false;
+        for (i = 0, j = polygon.size() - 1; i < polygon.size(); j = i++) {
+            if ((polygon.get(i).y > point.y) != (polygon.get(j).y > point.y) &&
+                    (point.x < (polygon.get(j).x - polygon.get(i).x) * (point.y
+                            - polygon.get(i).y) /
+                            (polygon.get(j).y - polygon.get(i).y) + polygon.get(i).x)) {
+                result = !result;
+            }
+        }
+        return result;
     }
 
 }
