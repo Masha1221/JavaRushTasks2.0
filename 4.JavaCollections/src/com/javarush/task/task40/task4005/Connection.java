@@ -17,9 +17,11 @@ public class Connection implements Closeable {
     private final ObjectOutputStream out;
 
     public Connection(Socket socket) throws Exception {
+
         this.socket = socket;
-        this.in = new ObjectInputStream(socket.getInputStream());
         this.out = new ObjectOutputStream(socket.getOutputStream());
+        this.in = new ObjectInputStream(socket.getInputStream());
+
     }
 
     public void send(String message) throws Exception {
