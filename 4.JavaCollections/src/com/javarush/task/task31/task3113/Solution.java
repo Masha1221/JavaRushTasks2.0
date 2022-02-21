@@ -15,6 +15,7 @@ import java.util.stream.Stream;
 
 public class Solution {
 
+
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String dirName = reader.readLine();
@@ -51,6 +52,32 @@ public class Solution {
 
 
 
+
+
+    static int counter = 0;
+    static int dirCounter = 0;
+    public static void main(String[] args) throws IOException {
+
+        Scanner s = new Scanner(System.in);
+
+        String wayToFolder = s.nextLine();
+        // wayToFolder путь к папке
+
+
+
+        Path path = Paths.get(wayToFolder);
+        // получаем из переданной строки файл
+        // файл типа Path
+        if ( !Files.isDirectory(path)){
+            System.out.println(path.toAbsolutePath() + " - не папка");
+
+            return;// выходим из метода
+        }
+
+
+
+       long file =  new File(wayToFolder).listFiles().length;
+            System.out.println("Всего папок -" +" " + file);
 
         }
 
