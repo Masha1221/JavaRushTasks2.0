@@ -6,6 +6,10 @@ package com.javarush.task.task15.task1524;
 
 public class Solution {
     static {
+
+        System.out.println("static void init()");
+
+
         System.out.println("Static block");
     }
 
@@ -19,7 +23,10 @@ public class Solution {
     public String name = "First name";
 
     static {
+
+
         init();
+
     }
 
     public Solution() {
@@ -27,9 +34,11 @@ public class Solution {
         printAllFields(this);
     }
 
+
     public static void init() {
         System.out.println("static void init()");
     }
+
 
     public static void main(String[] args) {
         System.out.println("public static void main");
@@ -38,7 +47,11 @@ public class Solution {
 
     public static void printAllFields(Solution obj) {
         System.out.println("static void printAllFields");
-        System.out.println(obj.name);
+
         System.out.println(obj.i);
+        System.out.println(obj.name);
+
+
+
     }
 }

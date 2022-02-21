@@ -12,6 +12,14 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         //напишите тут ваш код
+        Path path1 = Path.of(str);
+
+      if (path1.isAbsolute() == false){
+          System.out.println(path1.toAbsolutePath());
+      }
+      else {
+          System.out.println(path1);
+      }
     }
 }
 
