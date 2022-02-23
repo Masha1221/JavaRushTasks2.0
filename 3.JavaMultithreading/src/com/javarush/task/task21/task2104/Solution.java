@@ -9,7 +9,7 @@ Equals and HashCode
 
 public class Solution {
     private final String first, last;
-
+   private int a;
     public Solution(String first, String last) {
         this.first = first;
         this.last = last;
@@ -17,6 +17,7 @@ public class Solution {
 
     public boolean equals(Solution n) {
         return n.first.equals(first) && n.last.equals(last);
+
     }
 
     public int hashCode() {
