@@ -3617,3 +3617,8 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2022-02-23 16:21:59 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
 2022-02-23 16:22:00 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
 2022-02-23 16:22:00 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/project (1)/JavaRushTasks/JavaRushTasks/JavaRushTasks/3.JavaMultithreading/src/com/javarush/task/task21/task2106
+2022-02-23 16:23:07 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-23 16:23:07 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-23 16:23:11 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-23 16:23:14 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-23 16:23:14 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/project (1)/JavaRushTasks/JavaRushTasks/JavaRushTasks/3.JavaMultithreading/src/com/javarush/task/task21/task2105
