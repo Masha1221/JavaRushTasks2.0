@@ -3347,3 +3347,13 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2022-02-23 08:27:43 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
 2022-02-23 08:27:46 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
 2022-02-23 08:27:46 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/project (1)/JavaRushTasks/JavaRushTasks/JavaRushTasks/3.JavaMultithreading/src/com/javarush/task/task21/task2101
+2022-02-23 08:28:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-23 08:28:12 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-23 08:28:13 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-23 08:30:21 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-23 08:30:22 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-23 08:30:29 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-23 08:30:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-23 08:30:46 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-23 08:30:51 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-23 08:30:51 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :D:/project (1)/JavaRushTasks/JavaRushTasks/JavaRushTasks/3.JavaMultithreading/src/com/javarush/task/task21/task2104
