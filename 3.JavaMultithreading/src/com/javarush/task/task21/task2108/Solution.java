@@ -4,12 +4,15 @@ package com.javarush.task.task21.task2108;
 Клонирование растений
 */
 
+import java.io.Closeable;
+import java.io.IOException;
+
 public class Solution {
     public static void main(String[] args) {
         Tree tree = new Tree("willow", new String[]{"s1", "s2", "s3", "s4"});
         Tree clone = null;
         try {
-            clone = tree.clone();
+            clone = (Tree) tree.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
@@ -33,7 +36,7 @@ public class Solution {
         }
     }
 
-    public static class Tree extends Plant {
+    public static class Tree extends Plant implements Closeable {
         private String[] branches;
 
         public Tree(String name, String[] branches) {
@@ -43,6 +46,11 @@ public class Solution {
 
         public String[] getBranches() {
             return branches;
+        }
+
+        @Override
+        public void close() throws IOException {
+
         }
     }
 }
