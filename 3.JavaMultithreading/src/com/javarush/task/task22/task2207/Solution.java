@@ -3,7 +3,10 @@ package com.javarush.task.task22.task2207;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 /* 
 Обращенные слова
@@ -13,8 +16,7 @@ public class Solution {
     public static List<Pair> result = new LinkedList<>();
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String fileName = scanner.nextLine();
+
     }
 
     public static class Pair {
