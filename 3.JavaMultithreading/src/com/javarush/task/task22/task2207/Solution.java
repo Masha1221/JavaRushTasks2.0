@@ -15,8 +15,33 @@ import java.util.List;
 public class Solution {
     public static List<Pair> result = new LinkedList<>();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        List<String> words = new ArrayList<>();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader fileReader = new BufferedReader(new FileReader(bufferedReader.readLine()));
+        bufferedReader.close();
+        while (fileReader.ready()) {
+            words.addAll(Arrays.asList(fileReader.readLine().split(" ")));//заполнение массива words
+        }
+        fileReader.close();
 
+        for (int i = 0; i < words.size(); i++) {
+            for (int j = 0; j < words.size(); ) {
+                if (i >= words.size()) {
+                    break;
+                }
+                if (words.get(j).equals(new StringBuilder(words.get(i)).reverse().toString()) && j != i) {
+                    Pair pair = new Pair();
+                    pair.first = words.get(j);
+                    pair.second = words.get(i);
+                    result.add(pair);
+                    words.remove(j);
+                    words.remove(i);
+                    j = 0;
+                } else
+                    j++;
+            }
+        }
     }
 
     public static class Pair {
