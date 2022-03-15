@@ -30,6 +30,7 @@ public class Solution {
     class Task {
     }
 
+
     private class TaskDataProvider implements DbDataProvider<Task> {
         @Override
         public void refreshAllData(Map criteria) {
@@ -48,5 +49,9 @@ public class Solution {
 
     public static void main(String[] args) {
         new Solution().refresh();
+
+    public static void main(String[] args) {
+
+
     }
 }

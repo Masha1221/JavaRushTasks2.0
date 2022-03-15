@@ -11,6 +11,7 @@ public class Solution {
     }
 
     public static Solution[] getTwoSolutions() {
+
         Solution[] result = new Solution[2];
 
         Solution solution = new Solution();
@@ -25,6 +26,9 @@ public class Solution {
         result[1] = solution2;
 
         return result;
+
+        return null;
+
     }
 
     public static void main(String[] args) {
