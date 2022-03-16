@@ -14,6 +14,24 @@ public class Solution {
 
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            String fileName1 = scanner.nextLine();
+
+            if (fileName1.isEmpty()) {
+                break;
+            }
+
+            if (Files.isRegularFile(Path.of(fileName1))) {
+                System.out.println(Path.of(fileName1) + THIS_IS_FILE);
+            } else if (Files.isDirectory(Path.of(fileName1))) {
+                System.out.println(Path.of(fileName1) + THIS_IS_DIR);
+            }
+            else break;
+        }
+
+
+
 
 
     }
