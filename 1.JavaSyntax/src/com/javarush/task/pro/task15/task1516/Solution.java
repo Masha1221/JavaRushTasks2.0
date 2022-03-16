@@ -13,7 +13,10 @@ public class Solution {
     private static final String THIS_IS_DIR = " - это директория";
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+
+
     }
 }
+
 
