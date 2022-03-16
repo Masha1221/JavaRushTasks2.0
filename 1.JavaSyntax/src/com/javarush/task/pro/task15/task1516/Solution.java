@@ -13,6 +13,7 @@ public class Solution {
     private static final String THIS_IS_DIR = " - это директория";
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         while (true) {
             String fileName1 = scanner.nextLine();
@@ -28,6 +29,9 @@ public class Solution {
             }
             else break;
         }
+
+
+
 
 
     }
