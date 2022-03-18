@@ -1,5 +1,6 @@
 package com.javarush.task.task24.task2413;
 
+
 import java.util.List;
 
 public class Arkanoid {
@@ -63,6 +64,9 @@ public class Arkanoid {
     void move() {
 
     }
+
+
+public class Arkanoid {
 
     public static void main(String[] args) {
 

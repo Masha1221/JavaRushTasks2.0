@@ -15,10 +15,13 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
+
         URL url = new URL(line);
         InputStream input = url.openStream();
 
         Path tempFile = Files.createTempFile(null, null);
         Files.write(tempFile, input.readAllBytes());
+
+
     }
 }

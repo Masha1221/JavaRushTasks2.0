@@ -18,6 +18,7 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         Path directory = Path.of(scanner.nextLine());
+
         try (DirectoryStream<Path> paths = Files.newDirectoryStream(directory)) {
             for (Path path : paths) {
                 if (Files.isRegularFile(path)) {
@@ -27,6 +28,7 @@ public class Solution {
                 }
             }
         }
+
     }
 }
 
