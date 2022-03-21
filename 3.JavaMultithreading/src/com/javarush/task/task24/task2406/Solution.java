@@ -19,11 +19,13 @@ public class Solution {
         public class Apartments {
         }
 
+
     }
 
     public static void main(String[] args) {
 
     }
+
 
     public class Apt3Bedroom extends Building.Apartments {
         public Apt3Bedroom(Building building) {
@@ -36,4 +38,5 @@ public class Solution {
             building.super(square);
         }
     }
+
 }
