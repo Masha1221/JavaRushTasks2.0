@@ -21,7 +21,7 @@ public class Solution {
     }
 
 
-    public static class Test1 {
+    public static class Test1 implements Cloneable {
         protected Test1 clone() throws CloneNotSupportedException {
             return (Test1) super.clone();
         }
@@ -29,6 +29,7 @@ public class Solution {
 
     public static class Test2 extends Test1 {
         public Test2 clone(Test2 test2) throws CloneNotSupportedException {
+
             return (Test2) test2.clone();
         }
     }
@@ -39,9 +40,9 @@ public class Solution {
         }
     }
 
-    public static class Test4 extends Test3 {
-        protected Object c1one() throws CloneNotSupportedException {
-            return super.c1one();
+    public static class Test4 extends Test3 implements Cloneable {
+        protected Object clone() throws CloneNotSupportedException {
+            return super.clone();
         }
     }
 }
