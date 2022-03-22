@@ -13,17 +13,28 @@ public class Solution {
     private int countItems;
 
     public Iterator getIterator(final String name) {
+     return new Iterator() {
+             {
+
         class LocalIterator implements Iterator {
             public LocalIterator() {
+
                 countItems++;
                 System.out.println(name + " item " + countItems);
             }
 
             public Iterator next() {
+
+                return getIterator(name);
+            }
+        };
+        
+
                 return new LocalIterator();
             }
         }
         return new LocalIterator();
+
     }
 
     public static void main(String[] args) {
