@@ -44,6 +44,28 @@ public class Dog implements Pet {
      * @return экземпляр класса DogPet
      */
     public Sayable toSayable(final int i) {
-        return null;
+
+
+        class DogPet extends SuperDog implements Sayable{
+            private String getName(){
+                    return getSuperQuotes() + Dog.this.name + getSuperQuotes();
+            }
+            @Override
+            public String say() {
+                if (i<1){
+                    return getName() + " спит.";
+                }
+
+
+                StringBuilder sb = new StringBuilder(getName()).append(" лает г");
+                for (int j = 0; j < i; j++)
+                    sb.append("а");
+                sb.append("в!");
+                sb.append(" ");
+                sb.append(formatter.format(new Date()));
+                return sb.toString();
+            }
+        }
+        return new DogPet();
     }
 }
