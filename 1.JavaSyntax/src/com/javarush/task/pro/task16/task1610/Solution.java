@@ -8,6 +8,7 @@ import java.time.LocalTime;
 
 public class Solution {
 
+
     static LocalTime timeMax = LocalTime.MAX;
     static LocalTime timeMin = LocalTime.MIN;
     static LocalTime time1 = LocalTime.of(14, 0);
@@ -20,4 +21,17 @@ public class Solution {
         System.out.println(LocalTime.of(time1.getHour(), time2.getMinute(), time3.getSecond(), time4.getNano()));
     }
     }
+
+
+    static LocalTime timeMax;
+    static LocalTime timeMin;
+    static LocalTime time1;
+    static LocalTime time2;
+    static LocalTime time3;
+    static LocalTime time4;
+
+    public static void main(String[] args) {
+        //напишите тут ваш код
+    }
+}
 
