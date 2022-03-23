@@ -2,11 +2,11 @@ package com.javarush.task.task36.task3608.model;
 
 import com.javarush.task.task36.task3608.bean.User;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ModelData {
-   private List<User> users = new ArrayList<>();
+
+    private List<User> users;
 
     public List<User> getUsers() {
         return users;
