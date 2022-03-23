@@ -22,6 +22,7 @@ public class MainModel implements Model{
         List<User> users = userService.getUsersBetweenLevels(1, 100);
         //refresh model data
         modelData.setUsers(users);
+        modelData.setDisplayDeletedUserList(false);
     }
 
     @Override
@@ -29,6 +30,7 @@ public class MainModel implements Model{
         List<User> users = userService.getAllDeletedUsers();
         //refresh model data
         modelData.setUsers(users);
+        modelData.setDisplayDeletedUserList(true);
     }
 
 }
