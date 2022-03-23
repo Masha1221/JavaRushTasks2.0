@@ -6,5 +6,7 @@ public interface Model {
 
     void loadUsers();
 
+
     void loadDeletedUsers();
+
 }
