@@ -15,6 +15,7 @@ public class User implements Cloneable {
 
     public User() {
         this("", 0, 0);
+
     }
 
 
