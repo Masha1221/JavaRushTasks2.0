@@ -14,6 +14,7 @@ public class Solution implements Action {
 
         public void someAction() {
             //напишите тут ваш код
+
         }
     };
 
