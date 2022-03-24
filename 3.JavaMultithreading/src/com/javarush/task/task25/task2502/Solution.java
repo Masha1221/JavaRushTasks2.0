@@ -1,13 +1,7 @@
 package com.javarush.task.task25.task2502;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-/* 
-Машину на СТО не повезем!
-*/
 
 public class Solution {
     public static enum Wheel {
@@ -21,8 +15,18 @@ public class Solution {
         protected List<Wheel> wheels;
 
         public Car() {
-            //init wheels here
+            Set<Wheel> wheelSet = new HashSet<>(4);
+            String[] wheelNamesFromDb = loadWheelNamesFromDB();
+            if (wheelNamesFromDb.length != 4) throw new IllegalArgumentException();
+            for (String wheelName : wheelNamesFromDb) {
+                wheelSet.add(Wheel.valueOf(wheelName));
+            }
+            if (wheelSet.size() != 4) throw new IllegalArgumentException();
+            wheels = new ArrayList<>(wheelSet);
         }
+
+
+
 
         protected String[] loadWheelNamesFromDB() {
             //this method returns mock data
