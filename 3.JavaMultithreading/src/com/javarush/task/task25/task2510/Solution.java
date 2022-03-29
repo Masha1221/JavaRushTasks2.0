@@ -7,6 +7,7 @@ package com.javarush.task.task25.task2510;
 public class Solution extends Thread {
 
     public Solution() {
+
         this.setUncaughtExceptionHandler(new UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {
@@ -23,5 +24,10 @@ public class Solution extends Thread {
 
         Thread thread = new Thread(new Solution());
         thread.start();
+
+    }
+
+    public static void main(String[] args) {
+
     }
 }
