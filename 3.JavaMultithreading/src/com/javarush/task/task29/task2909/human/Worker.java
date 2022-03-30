@@ -6,7 +6,11 @@ public class Worker {
     public String company;
 
     public Worker(String name, int age) {
+
         human = new Human(name, age);
+
+        human = new Human(false);
+
     }
 
     public void live() {
