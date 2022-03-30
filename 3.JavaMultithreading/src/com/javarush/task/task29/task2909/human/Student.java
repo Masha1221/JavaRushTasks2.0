@@ -5,7 +5,11 @@ import java.util.Date;
 import java.util.List;
 
 public class Student extends Human {
+
+  
+
     private List<Human> children = new ArrayList<>();
+
     private double averageGrade;
     private String university;
     private Date beginningOfSession;
@@ -18,6 +22,8 @@ public class Student extends Human {
         this.averageGrade = averageGrade;
     }
 
+
+
     public List<Human> getChildren() {
         return children;
     }
@@ -25,6 +31,7 @@ public class Student extends Human {
     public void setChildren(List<Human> children) {
         this.children = children;
     }
+
 
     public void live() {
         learn();

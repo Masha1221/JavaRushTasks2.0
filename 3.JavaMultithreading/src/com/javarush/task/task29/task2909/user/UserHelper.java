@@ -27,10 +27,14 @@ public class UserHelper {
     }
 
     private boolean ageLessThan16(User user) {
+
+        return user.getAge() < 16;
+
         if (user.getAge() < 16) {
             return true;
         }
         return false;
+
     }
 
     public int calculateAverageAge() {
