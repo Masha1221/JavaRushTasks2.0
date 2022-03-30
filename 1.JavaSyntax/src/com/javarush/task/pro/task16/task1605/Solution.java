@@ -16,6 +16,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Calendar currentDay = Calendar.getInstance();
+
         while (!isTeleportInvented(currentDay)) {
             currentDay.add(Calendar.YEAR, 10);
         }
@@ -29,5 +30,14 @@ public class Solution {
             System.out.println(NOT_INVENTED);
             return false;
         }
+
+        //напишите тут ваш код
+    }
+
+    static boolean isTeleportInvented(Calendar currentDay) {
+        //напишите тут ваш код
+
+        return false;
+
     }
 }

@@ -11,7 +11,9 @@ public class Human {
     protected String name;
     protected int course;
 
+
     private List<Human> children = new ArrayList<>();
+
 
     protected int[] size;
 
@@ -73,6 +75,7 @@ public class Human {
         this.id = id;
     }
 
+
     public List<Human> getChildren() {
         return Collections.unmodifiableList(children);
     }
@@ -84,6 +87,7 @@ public class Human {
     public void removeChild(Human child) {
         children.remove(child);
     }
+
 
     public void printSize() {
         System.out.println("Рост: " + size[0] + " Вес: " + size[1]);
