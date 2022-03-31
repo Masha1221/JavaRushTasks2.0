@@ -5,21 +5,31 @@ package com.javarush.task.task29.task2909.human;
 public class Teacher extends Human {
   
 
+
+public class Teacher extends Human {
+  
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Teacher extends Human {
     private List<Human> children = new ArrayList<>();
 
+
     private int numberOfStudents;
     private String university;
 
     public Teacher(String name, int age, int numberOfStudents) {
+
+        super(name, age);
+
         super(false);
         this.name = name;
         this.age = age;
+
         this.numberOfStudents = numberOfStudents;
     }
+
 
 
     public List<Human> getChildren() {
@@ -29,6 +39,7 @@ public class Teacher extends Human {
     public void setChildren(List<Human> children) {
         this.children = children;
     }
+
 
 
     public void live() {

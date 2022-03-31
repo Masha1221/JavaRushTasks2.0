@@ -30,10 +30,13 @@ public class UserHelper {
 
         return user.getAge() < 16;
 
+        return user.getAge() < 16;
+
         if (user.getAge() < 16) {
             return true;
         }
         return false;
+
 
     }
 
