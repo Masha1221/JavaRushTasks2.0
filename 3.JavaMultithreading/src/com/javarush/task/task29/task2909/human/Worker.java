@@ -5,7 +5,19 @@ public class Worker extends Human {
    private String company;
 
     public Worker(String name, int age) {
+
         super(name, age);
+
+
+        human = new Human(name, age);
+
+        human = new Human(false);
+
+    }
+
+    public void live() {
+        human.live();
+
     }
 
     public double getSalary() {
